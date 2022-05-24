@@ -8,7 +8,7 @@
 This patch adds the following features to the Game Boy game "Wario Land: Super Mario Land 3":
 
 * Select world, level and powerup
-* Fight bosses (thus disables overworld movement - that's how the game works Q.Q)
+* With 1.1.1 able to fight bosses (thus disables overworld movement - that's how the game works Q.Q)
 * [Save states](https://github.com/mattcurrie/gb-save-states) (`[Start]+[↓]/[↑]` or `[Select]+[A]/[B]`)
 * Soft reset (`[Start]+[Select]+[A]+[B]`) always available, even when original game disallows it.
 
