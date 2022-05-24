@@ -16,7 +16,7 @@ all:
 	rgbgfx -f -o $(GFX)/out/cursor_inactive.2bpp $(GFX)/cursor_inactive.png
 	rgbgfx -f -o $(GFX)/out/cursor_active.2bpp $(GFX)/cursor_active.png
 	rgbgfx -f -o $(GFX)/out/line.2bpp $(GFX)/line.png
-	rgbgfx -f -o $(GFX)/out/version.2bpp $(GFX)/version.png
+	rgbgfx -f -o $(GFX)/out/version_minor.2bpp $(GFX)/version_minor.png
 	bspatch "$(SML3_ROM)" "$(TEMP_ROM)" "$(SML3_SAVESTATES_BSDIFF)" || \
 		cp "$(SML3_ROM)" "$(TEMP_ROM)"
 	rgbasm  -E $(SOURCE_FILE) -o $(OBJECT_FILE)

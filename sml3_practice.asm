@@ -35,6 +35,7 @@ TILE_CURSOR_ACTIVE              equ     $d1
 TILE_LINE                       equ     $d2
 TILE_VERSION_1                  equ     $d3
 TILE_VERSION_2                  equ     $d4
+TILE_VERSION_3                  equ     $d5
 TILE_ZERO                       equ     $a0
 TILE_A                          equ     $80
 
@@ -580,8 +581,10 @@ print_screen:
 
 print_version:
         ld      a, TILE_VERSION_1
-        ld      [$9a32], a
+        ld      [$9a31], a
         ld      a, TILE_VERSION_2
+        ld      [$9a32], a
+        ld      a, TILE_VERSION_3
         ld      [$9a33], a
         ret
 
@@ -828,11 +831,11 @@ my_sprites:
         incbin  "gfx/out/cursor_inactive.2bpp"
         incbin  "gfx/out/cursor_active.2bpp"
         incbin  "gfx/out/line.2bpp"
-        incbin  "gfx/out/version.2bpp"
+        incbin  "gfx/out/version_minor.2bpp"
 end_my_sprites:
 
 savefile:
-        incbin "no_treasures.sav", 0, 24
+        incbin "no_treasures_no_bosses.sav", 0, 24
 
 SECTION "variables", SRAM[$a040], BANK[0]
 selected_world:                 db
