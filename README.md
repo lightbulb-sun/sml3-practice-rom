@@ -12,7 +12,9 @@ This patch adds the following features to the Game Boy game "Wario Land: Super M
 * [Save states](https://github.com/mattcurrie/gb-save-states) (`[Start]+[↓]/[↑]` or `[Select]+[A]/[B]`)
 * Soft reset (`[Start]+[Select]+[A]+[B]`) always available, even when original game disallows it.
 
-  
+## IMPORTANT BEFORE PLAYING
+If you see the bosses still being beaten after booting up the ROM, you **must** delete the old savefile (.sav File)  
+from previous versions in order to fully work.  
 
 ## Download
 
